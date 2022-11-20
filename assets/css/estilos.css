@@ -1,3 +1,4 @@
+/* fuentes */
 .navBar, .titulos, .tituloFooter{
     font-family: 'Raleway', sans-serif;
 }
@@ -8,9 +9,9 @@
     color: white;
 }
 
+/* navbar */
 .logo{
     width: 6%;
-
 }
 
 /* carousel */
@@ -35,7 +36,7 @@
 .carta{
     width: 20%;
 }
-.cartas{
+.cartasBody{
     background-color: #09ccec;
 }
 .imgCards{

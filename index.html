@@ -40,10 +40,10 @@
   </head>
   <body class="cuerpo">
     <!--inicio navbar-->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
       <div class="container-fluid">
         <div class="d-flex align-items-center ps-5">
-          <img src="assets/img/viajes.svg" alt="" class="logo mb-4 me-1" />
+          <img src="assets/img/viajes.svg" alt="" class="logo mb-4" />
           <p class="navBar navbar-brand text-light">Viajes Chile</p>
           <button
             class="navbar-toggler"
@@ -60,7 +60,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navBar navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#"
+              <a class="nav-link active text-light" aria-current="page" href="#"
                 >Inicio</a
               >
             </li>
@@ -134,7 +134,7 @@
         <div
           class="d-flex flex-column justify-content-center align-items-center parrafo"
         >
-          <div class="iconosParrafos mb-3">
+          <div class="iconosParrafos mb-3 col-12">
             <i class="fa-solid fa-plane fa-2x"></i>
           </div>
           <p>
@@ -166,14 +166,14 @@
             molestiae veniam placeat minus, accusantium incidunt, impedit
             maiores voluptates ratione dolorem qui necessitatibus architecto?
           </p>
-          <div class="iconosParrafos">
+          <div class="iconosParrafos col-12">
             <i class="fa-solid fa-mountain fa-2x"></i>
           </div>
         </div>
         <div
           class="d-flex flex-column justify-content-center align-items-center parrafo"
         >
-          <div class="iconosParrafos mb-3">
+          <div class="iconosParrafos col-12 mb-3">
             <i class="fa-solid fa-route fa-2x"></i>
           </div>
           <p>
@@ -197,10 +197,10 @@
       <h2 class="titulos text-center">DESTACADOS</h2>
       <hr />
       <div class="d-flex justify-content-center">
-        <div class="carta card me-5" style="width: 18rem">
+        <div class="carta card me-5" id="card1" style="width: 18rem">
           <img src="assets/img/card1.jpg" class="card-img-top imgCards" />
-          <div class="cartas card-body">
-            <p class="card-text">
+          <div class="cartasBody card-body">
+            <p class="card-text" id="cardMessage1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
               esse atque officia sequi odio, exercitationem blanditiis.
               Consequuntur deserunt fugit odio perferendis tenetur tempora quod
@@ -208,20 +208,21 @@
             </p>
           </div>
         </div>
-        <div class="carta card me-5" style="width: 18rem">
+        <div class="carta card me-5" id="card2" style="width: 18rem">
           <img src="assets/img/card2.jpg" class="card-img-top imgCards" />
-          <div class="cartas card-body">
-            <p class="card-text">
+          <div class="cartasBody card-body">
+            <p class="card-text" id="cardMessage2">
               Doloribus ducimus quam doloremque voluptatum! Similique,
               laboriosam, debitis earum magnam numquam cupiditate architecto
-              consectetur doloremque praesentium quibusdam iure atque amet error
+              consectetur doloremque praesentium quibusdam iure atque amet
+              error.
             </p>
           </div>
         </div>
-        <div class="carta card me-5" style="width: 18rem">
+        <div class="carta card me-5" id="card3" style="width: 18rem">
           <img src="assets/img/card3.jpg" class="card-img-top imgCards" />
-          <div class="cartas card-body">
-            <p class="card-text">
+          <div class="cartasBody card-body">
+            <p class="card-text" id="cardMessage3">
               Nam adipisci quas dolore reprehenderit voluptas optio suscipit
               tempora impedit aut fugit magnam hic, alias aliquam veritatis, sit
               odio fugiat molestiae exercitationem, minima facere numquam
@@ -229,10 +230,10 @@
             </p>
           </div>
         </div>
-        <div class="carta card" style="width: 18rem">
+        <div class="carta card" id="card4" style="width: 18rem">
           <img src="assets/img/card4.jpg" class="card-img-top imgCards" />
-          <div class="cartas card-body">
-            <p class="card-text">
+          <div class="cartasBody card-body">
+            <p class="card-text" id="cardMessage4">
               Saepe sequi, ducimus animi error quidem iure nam, dignissimos in
               quos soluta adipisci molestias itaque hic possimus enim dolor
               praesentium neque sed aliquam cupiditate sunt.
@@ -250,18 +251,18 @@
         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
         <input
           type="email"
-          class="form-control"
+          class="form-control col-11"
           id="exampleFormControlInput1"
           placeholder="Ingrese su nombre"
         />
       </div>
       <div class="mb-3 ms-5 me-5">
-        <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+        <label for="exampleFormControlInput1" class="form-label">Correo</label>
         <input
           type="email"
-          class="form-control"
+          class="form-control col-11"
           id="exampleFormControlInput1"
-          placeholder="Ingrese asunto"
+          placeholder="Ingrese correo"
         />
       </div>
       <div class="mb-3 ms-5 me-5">
@@ -269,26 +270,79 @@
           >Mensaje</label
         >
         <textarea
-          class="form-control"
+          class="form-control col-11"
           id="exampleFormControlTextarea1"
           rows="3"
         ></textarea>
       </div>
-      <button type="button" class="btn btn-info text-light ms-5">Enviar</button>
+      <button type="button" id="enviar" class="btn btn-info text-light ms-5">
+        <!-- tooltip -->
+        <a
+          data-toggle="tooltip"
+          title="Al presionar tu mensaje sera enviado"
+          class="text-decoration-none text-light"
+          >Enviar</a
+        >
+        <!-- fin total -->
+      </button>
+      <!-- modal -->
+      <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark text-center">Mensaje Enviado</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-dark text-center">
+              <p>
+                ¡Tu mensaje fué enviado con éxito! <br />
+                Te contactaremos a la brevedad posible.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin modal -->
     </div>
     <!--fin contenedor formulario-->
     <!--inicio footer-->
     <footer class="footer d-flex justify-content-between pt-4 pb-4">
       <h2 class="tituloFooter ps-5">VIAJES CHILE</h2>
       <div class="iconos pt-1 pe-5 d-flex justify-content-evenly">
-        <i class="fa-brands fa-github fa-2x"></i>
-        <i class="fa-brands fa-linkedin fa-2x"></i>
-        <i class="fa-brands fa-twitter fa-2x"></i>
-        <i class="fa-brands fa-facebook fa-2x"></i>
+        <a href="https://github.com/">
+          <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/">
+          <i class="fa-brands fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
       </div>
     </footer>
     <!--termino footer-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.js"
+      integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
