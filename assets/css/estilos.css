@@ -1,0 +1,54 @@
+.navBar, .titulos, .tituloFooter{
+    font-family: 'Raleway', sans-serif;
+}
+
+.cuerpo{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    width: 6%;
+
+}
+
+/* carousel */
+.imagenCarousel{
+    max-width: 100vw;
+    height: 100vh;
+}
+
+
+/* Parrafos */
+.parrafo {
+    width: 28%;
+    height: 60%;
+}
+.iconosParrafos{
+    width: 100%;
+    background-color: #09ccec;
+    text-align: center;
+}
+
+/*Cards*/
+.carta{
+    width: 20%;
+}
+.cartas{
+    background-color: #09ccec;
+}
+.imgCards{
+    height: 170px;
+}
+
+/*footer*/
+.footer{
+    background-color: #09ccec;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.iconos{
+    width: 250px;
+}
