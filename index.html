@@ -41,7 +41,7 @@
   <body class="cuerpo">
     <!--inicio navbar-->
     <nav class="navbar navbar-expand-lg fixed-top" id="nav">
-      <div class="container-fluid">
+      <div class="container-fluid navMobile">
         <div class="d-flex align-items-center ps-5">
           <img src="assets/img/viajes.svg" alt="" class="logo mb-4" />
           <p class="navBar navbar-brand text-light">Viajes Chile</p>
@@ -60,18 +60,23 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navBar navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#"
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="#carouselExampleControls"
                 >Inicio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Quienes Somos</a>
+              <a class="nav-link text-light" href="#quienesSomos"
+                >Quienes Somos</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Destacados</a>
+              <a class="nav-link text-light" href="#destacados">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contacto</a>
+              <a class="nav-link text-light" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -81,7 +86,7 @@
     <!--inicio carousel-->
     <div
       id="carouselExampleControls"
-      class="carousel slide"
+      class="carousel slide carouselSection"
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
@@ -125,78 +130,88 @@
     </div>
     <!--termino carousel-->
     <!--contenedor parrafos mas iconos-->
-    <div
-      class="d-flex flex-column justify-content-center align-items-center p-5"
-    >
-      <h2 class="titulos">¿QUIÉNES SOMOS?</h2>
-      <hr />
-      <div class="d-flex justify-content-around">
-        <div
-          class="d-flex flex-column justify-content-center align-items-center parrafo"
-        >
-          <div class="iconosParrafos mb-3 col-12">
-            <i class="fa-solid fa-plane fa-2x"></i>
+    <div class="presentacion">
+      <div
+        id="quienesSomos"
+        class="d-flex flex-column justify-content-center align-items-center p-5"
+      >
+        <h2 class="titulos pb-5">¿QUIÉNES SOMOS?</h2>
+        <hr />
+        <div class="d-flex justify-content-around align-items-center">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center parrafo"
+          >
+            <div class="iconosParrafos mb-3 col-12">
+              <i class="fa-solid fa-plane fa-2x"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              eius at reprehenderit provident cum? Ipsa quas quisquam sunt unde
+              provident ut aliquam nam quia illum, dolorem animi ipsum esse
+              dolorum necessitatibus officiis, placeat facere sequi incidunt
+              labore at explicabo! Tempora ea explicabo ab quasi, totam
+              corporis! Et, blanditiis perspiciatis voluptas natus alias quasi
+              tempore cumque illum. Repudiandae distinctio corrupti soluta
+              aliquam repellat aspernatur eos facilis labore ducimus sed at
+              odit, quidem molestiae veniam placeat minus, accusantium incidunt,
+              impedit maiores voluptates ratione dolorem qui necessitatibus
+              architecto?
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-            eius at reprehenderit provident cum? Ipsa quas quisquam sunt unde
-            provident ut aliquam nam quia illum, dolorem animi ipsum esse
-            dolorum necessitatibus officiis, placeat facere sequi incidunt
-            labore at explicabo! Tempora ea explicabo ab quasi, totam corporis!
-            Et, blanditiis perspiciatis voluptas natus alias quasi tempore
-            cumque illum. Repudiandae distinctio corrupti soluta aliquam
-            repellat aspernatur eos facilis labore ducimus sed at odit, quidem
-            molestiae veniam placeat minus, accusantium incidunt, impedit
-            maiores voluptates ratione dolorem qui necessitatibus architecto?
-          </p>
-        </div>
 
-        <div
-          class="d-flex flex-column justify-content-center align-items-center parrafo"
-        >
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-            eius at reprehenderit provident cum? Ipsa quas quisquam sunt unde
-            provident ut aliquam nam quia illum, dolorem animi ipsum esse
-            dolorum necessitatibus officiis, placeat facere sequi incidunt
-            labore at explicabo! Tempora ea explicabo ab quasi, totam corporis!
-            Et, blanditiis perspiciatis voluptas natus alias quasi tempore
-            cumque illum. Repudiandae distinctio corrupti soluta aliquam
-            repellat aspernatur eos facilis labore ducimus sed at odit, quidem
-            molestiae veniam placeat minus, accusantium incidunt, impedit
-            maiores voluptates ratione dolorem qui necessitatibus architecto?
-          </p>
-          <div class="iconosParrafos col-12">
-            <i class="fa-solid fa-mountain fa-2x"></i>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center parrafo"
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              eius at reprehenderit provident cum? Ipsa quas quisquam sunt unde
+              provident ut aliquam nam quia illum, dolorem animi ipsum esse
+              dolorum necessitatibus officiis, placeat facere sequi incidunt
+              labore at explicabo! Tempora ea explicabo ab quasi, totam
+              corporis! Et, blanditiis perspiciatis voluptas natus alias quasi
+              tempore cumque illum. Repudiandae distinctio corrupti soluta
+              aliquam repellat aspernatur eos facilis labore ducimus sed at
+              odit, quidem molestiae veniam placeat minus, accusantium incidunt,
+              impedit maiores voluptates ratione dolorem qui necessitatibus
+              architecto?
+            </p>
+            <div class="iconosParrafos col-12">
+              <i class="fa-solid fa-mountain fa-2x"></i>
+            </div>
           </div>
-        </div>
-        <div
-          class="d-flex flex-column justify-content-center align-items-center parrafo"
-        >
-          <div class="iconosParrafos col-12 mb-3">
-            <i class="fa-solid fa-route fa-2x"></i>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center parrafo"
+          >
+            <div class="iconosParrafos col-12 mb-3">
+              <i class="fa-solid fa-route fa-2x"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              eius at reprehenderit provident cum? Ipsa quas quisquam sunt unde
+              provident ut aliquam nam quia illum, dolorem animi ipsum esse
+              dolorum necessitatibus officiis, placeat facere sequi incidunt
+              labore at explicabo! Tempora ea explicabo ab quasi, totam
+              corporis! Et, blanditiis perspiciatis voluptas natus alias quasi
+              tempore cumque illum. Repudiandae distinctio corrupti soluta
+              aliquam repellat aspernatur eos facilis labore ducimus sed at
+              odit, quidem molestiae veniam placeat minus, accusantium incidunt,
+              impedit maiores voluptates ratione dolorem qui necessitatibus
+              architecto?
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-            eius at reprehenderit provident cum? Ipsa quas quisquam sunt unde
-            provident ut aliquam nam quia illum, dolorem animi ipsum esse
-            dolorum necessitatibus officiis, placeat facere sequi incidunt
-            labore at explicabo! Tempora ea explicabo ab quasi, totam corporis!
-            Et, blanditiis perspiciatis voluptas natus alias quasi tempore
-            cumque illum. Repudiandae distinctio corrupti soluta aliquam
-            repellat aspernatur eos facilis labore ducimus sed at odit, quidem
-            molestiae veniam placeat minus, accusantium incidunt, impedit
-            maiores voluptates ratione dolorem qui necessitatibus architecto?
-          </p>
         </div>
       </div>
     </div>
+
     <!--termino contenedor parrafos mas iconos-->
     <!--contenedor cards-->
-    <div class="d-flex flex-column p-5">
-      <h2 class="titulos text-center">DESTACADOS</h2>
-      <hr />
-      <div class="d-flex justify-content-center">
+
+    <div id="destacados" class="d-flex flex-column pt-5 mb-5">
+      <h2 class="titulos text-center pt-5 mb-2">DESTACADOS</h2>
+      <hr class="mb-3" />
+      <div
+        class="d-flex justify-content-center align-items-center mt-5 mb-2 destacados"
+      >
         <div class="carta card me-5" id="card1" style="width: 18rem">
           <img src="assets/img/card1.jpg" class="card-img-top imgCards" />
           <div class="cartasBody card-body">
@@ -236,7 +251,8 @@
             <p class="card-text" id="cardMessage4">
               Saepe sequi, ducimus animi error quidem iure nam, dignissimos in
               quos soluta adipisci molestias itaque hic possimus enim dolor
-              praesentium neque sed aliquam cupiditate sunt.
+              praesentium neque sed aliquam cupiditate sunt Nam adipisci quas
+              dolore reprehenderit .
             </p>
           </div>
         </div>
@@ -244,7 +260,7 @@
     </div>
     <!--fin contenedor cards-->
     <!--contenedor formulario-->
-    <div class="p-5">
+    <div id="contacto" class="p-5">
       <h2 class="titulos text-center">CONTACTO</h2>
       <hr />
       <div class="mb-3 ms-5 me-5">
@@ -323,16 +339,16 @@
     <footer class="footer d-flex justify-content-between pt-4 pb-4">
       <h2 class="tituloFooter ps-5">VIAJES CHILE</h2>
       <div class="iconos pt-1 pe-5 d-flex justify-content-evenly">
-        <a href="https://github.com/">
+        <a href="https://github.com/" class="text-light">
           <i class="fa-brands fa-github fa-2x"></i>
         </a>
-        <a href="https://www.linkedin.com/">
+        <a href="https://www.linkedin.com/" class="text-light">
           <i class="fa-brands fa-linkedin fa-2x"></i>
         </a>
-        <a href="https://twitter.com/">
+        <a href="https://twitter.com/" class="text-light">
           <i class="fa-brands fa-twitter fa-2x"></i>
         </a>
-        <a href="https://www.facebook.com/">
+        <a href="https://www.facebook.com/" class="text-light">
           <i class="fa-brands fa-facebook fa-2x"></i>
         </a>
       </div>
